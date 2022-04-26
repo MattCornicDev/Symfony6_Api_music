@@ -34,7 +34,7 @@
         </div>
         <div class="col-12 col-md-8 ps-5">
 
-            <h2 class="mb-4">10 songs (30 minutes of 60 still available)</h2>
+            <h2 class="mb-4">19 morceaux (14 minutes sur 60 encore disponibles)</h2>
             {% for track in tracks %}
             <div class="song-list" {{ stimulus_controller('song-controls', {
                 infoUrl: path('api_songs_get_one', { id: loop.index })
@@ -53,7 +53,7 @@
                 </div>
             </div>
             {% endfor %}
-            <button type="button" class="btn btn-success"><i class="fas fa-plus"></i> Add a song</button>
+            <button type="button" class="btn btn-success"><i class="fas fa-plus"></i> Ajouter un morceau</button>
         </div>
     </div>
 </div>
